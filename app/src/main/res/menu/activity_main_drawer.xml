@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Home"
+            android:icon="@drawable/ic_baseline_account_balance_24"
+            android:title="Home Cesar" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="Presentación" />
+        <item
+            android:id="@+id/nav_calculadora"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="Calculadora" />
+        <item
+            android:id="@+id/nav_sonido"
+            android:icon="@drawable/ic_baseline_headset_24"
+            android:title="Audio mp3" />
+        <item
+            android:id="@+id/nav_sitioweb"
+            android:icon="@drawable/ic_baseline_web_24"
+            android:title="Siguiente Sitio Web" />
+        <item
+            android:id="@+id/nav_otroapk"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Siguiente App" />
+        <item
+            android:id="@+id/nav_maravilla"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="Maravilla" />
+        <item
+            android:id="@+id/plus"
+            android:icon="@drawable/ic_baseline_self_improvement_24"
+            android:title="Proposición Nueva" />
+
+    </group>
+</menu>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.actividadnavdreawercesar.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.actividadnavdreawercesar.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.actividadnavdreawercesar.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_sonido"
+        android:name="com.example.actividadnavdreawercesar.nav_sonido"
+        android:label="fragment_nav_sonido"
+        tools:layout="@layout/fragment_nav_sonido" />
+    <fragment
+        android:id="@+id/nav_sitioweb"
+        android:name="com.example.actividadnavdreawercesar.nav_sitioweb"
+        android:label="fragment_nav_sitioweb"
+        tools:layout="@layout/fragment_nav_sitioweb" >
+        <action
+            android:id="@+id/action_nav_sitioweb_to_webcomponent"
+            app:destination="@id/webcomponent" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_otroapk"
+        android:name="com.example.actividadnavdreawercesar.nav_otroapk"
+        android:label="fragment_nav_otroapk"
+        tools:layout="@layout/fragment_nav_otroapk" />
+    <fragment
+        android:id="@+id/nav_maravilla"
+        android:name="com.example.actividadnavdreawercesar.nav_maravilla"
+        android:label="fragment_nav_maravilla"
+        tools:layout="@layout/fragment_nav_maravilla" >
+        <action
+            android:id="@+id/action_nav_maravilla_to_nav_maravilla2"
+            app:destination="@id/nav_maravilla2" />
+        <action
+            android:id="@+id/action_nav_maravilla_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_propuesta"
+        android:name="com.example.actividadnavdreawercesar.nav_propuesta"
+        android:label="fragment_nav_propuesta"
+        tools:layout="@layout/fragment_nav_propuesta" />
+    <fragment
+        android:id="@+id/nav_calculadora"
+        android:name="com.example.actividadnavdreawercesar.nav_calculadora"
+        android:label="fragment_nav_calculadora"
+        tools:layout="@layout/fragment_nav_calculadora" />
+    <fragment
+        android:id="@+id/webcomponent"
+        android:name="com.example.actividadnavdreawercesar.webcomponent"
+        android:label="fragment_webcomponent"
+        tools:layout="@layout/fragment_webcomponent" >
+        <action
+            android:id="@+id/action_webcomponent_to_nav_sitioweb"
+            app:destination="@id/nav_sitioweb" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_maravilla2"
+        android:name="com.example.actividadnavdreawercesar.nav_maravilla2"
+        android:label="fragment_nav_maravilla2"
+        tools:layout="@layout/fragment_nav_maravilla2" >
+        <action
+            android:id="@+id/action_nav_maravilla2_to_nav_maravilla3"
+            app:destination="@id/nav_maravilla3" />
+        <action
+            android:id="@+id/action_nav_maravilla2_to_nav_maravilla"
+            app:destination="@id/nav_maravilla" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_maravilla3"
+        android:name="com.example.actividadnavdreawercesar.nav_maravilla3"
+        android:label="fragment_nav_maravilla3"
+        tools:layout="@layout/fragment_nav_maravilla3" >
+        <action
+            android:id="@+id/action_nav_maravilla3_to_nav_maravilla2"
+            app:destination="@id/nav_maravilla2" />
+    </fragment>
+    <activity
+        android:id="@+id/plus"
+        android:name="com.example.actividadnavdreawercesar.plus"
+        android:label="activity_plus"
+        tools:layout="@layout/activity_plus" />
+</navigation>

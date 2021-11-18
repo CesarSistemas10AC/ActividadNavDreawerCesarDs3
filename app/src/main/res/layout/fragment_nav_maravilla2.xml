@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_shadow_end_color"
+    tools:context="nav_maravilla2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:src="@drawable/nvidia3090" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEEFE8"
+            android:paddingVertical="20dp"
+            android:text="GPU Nvidia RTX 3090"
+            android:textAlignment="center"
+            android:textColor="#1E7DB7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="231dp"
+            android:layout_weight="1"
+            android:background="#FEEFE8"
+            android:gravity="center"
+            android:text="La tarjeta de video o tarjeta gráfica de Nvidia salió hace poco al mercado de tecnologías con alta relevancia y costo demasiadamente altísimo con toda la crisis que se va desarollando en las tarjetas de video, pero esta tarjeta es la más tope de gama y considerada uno de los productos mas sobresalientes y maravillosos dentro de las Gpu. Por otro lado alcanza una tasa de FPs de hasta 200 eso sin sufrir un cuello de botella. La gran RTX 3090!!!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAtras3"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:text="ATRAS"
+                android:translationX="265dp"
+                android:backgroundTint="@android:color/holo_blue_light"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnnext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+
+    </LinearLayout>
+</FrameLayout>

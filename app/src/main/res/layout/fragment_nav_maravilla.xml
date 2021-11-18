@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_shadow_end_color"
+    tools:context="nav_maravilla">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:src="@drawable/procryzen" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FEEFE8"
+            android:paddingVertical="20dp"
+            android:text="Procesador Ryzen 9"
+            android:textAlignment="center"
+            android:textColor="#1E7DB7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="231dp"
+            android:layout_weight="1"
+            android:background="#FEEFE8"
+            android:gravity="center"
+            android:text="El procesador Ryzen 9 5950X es el ultimo procesador top de la marca AMD, es un gran procesador que realiza múltiples tareas a la vez el cual es muy importante para las gamas altas de trabajo y calidades de empresa que requieran este procesador. Con 16 núcleos y 32 hilos es el mejor para trabajo laboral o algunos usuarios lo usan para la sección Gamer, es una maravilla en cuanto a procesador top gamas altas!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAtras3"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:text="ATRAS"
+                android:translationX="265dp"
+                android:backgroundTint="@android:color/holo_blue_light"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnnext3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Siguiente"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+
+    </LinearLayout>
+</FrameLayout>
